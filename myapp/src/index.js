@@ -10,7 +10,13 @@ import ReactDOM from 'react-dom/client'
 // import App from './01-base/08-state'
 // import App from './01-base/09-循环渲染'
 // import App from './01-base/10-todolist'
-import App from './01-base/11-dangerouslySetInnerHTML'
+// import App from './01-base/11-dangerouslySetInnerHTML'
+// import App from './01-base/12-选项卡'
+// import App from './01-base/13-setState同步异步'
+// import App from './01-base/14-betterScroll'
+// import App from './01-base/15-betterScroll-cinema'
+// import App from './01-base/16-props'
+import App from './01-base/17-props函数式组件'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

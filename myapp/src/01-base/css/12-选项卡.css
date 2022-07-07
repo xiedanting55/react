@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul.footer {
+  list-style: none;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background-color: #fff;
+}
+ul.footer li {
+  flex: 1;
+  text-align: center;
+}
+ul.footer li.active {
+  color: red;
+}
+
+.cinema-list {
+  margin-bottom: 50px;
+}
+.cinema-list-item {
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
