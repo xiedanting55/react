@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>jsx语法规则</title>
+  <style>
+    .title {
+      background-color: #e89292;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 准备一个"容器" -->
+  <div id="test"></div>
+
+  <!-- 引入react核心库 -->
+  <script src="../js/react.development.js"></script>
+  <!-- 引入react-dom 用于支持react操作DOM -->
+  <script src="../js/react-dom.development.js"></script>
+  <!-- 引入babel，用于将jsx转为js -->
+  <script src="../js/babel.min.js"></script>
+
+
+  <script type="text/babel">
+    const myId = "title"
+    const myData = "Hello, React"
+    // 1.创建虚拟DOM
+    const vDOM = (/* 此处一定不要写引号，因为不是字符串 */
+      <div>
+        <h2 id={myId} className="title">
+          <span style={{ color: "red", fontSize: "20px" }}>{myData}</span>
+        </h2>
+        <input type="text" />
+      </div>
+    )
+    // 2.渲染虚拟DOM到页面
+    ReactDOM.render(vDOM, document.getElementById("test"))
+
+    /*
+      jsx语法规则
+        1. 定义虚拟DOM时，不要写引号
+        2. 标签中混入JS表达式时要用{}
+        3. 样式的类名指定不要用class，要用className
+        4. 内联样式，要用style={{ key: value }}的形式去写
+        5. 只有一个根标签
+        6. 标签必须闭合
+    */
+  </script>
+</body>
+
+</html>
